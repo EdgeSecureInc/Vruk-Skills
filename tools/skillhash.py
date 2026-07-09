@@ -6,9 +6,10 @@ skill directory, walked in sorted relative-path order, feeding for each file:
 
     <relative/posix/path>\0<raw file bytes>\0
 
-Dotfiles and dot-directories are skipped. The same algorithm must be used by
-any consumer (installer, scanner, mothership) that wants to answer "has this
-skill changed since it was installed?".
+Dotfiles, dot-directories, and the install sidecar `hivemind-version.json` are
+skipped — so a deployed skill directory hashes identically to its catalog
+directory. The same algorithm must be used by any consumer (installer, scanner,
+mothership) that wants to answer "has this skill changed since it was installed?".
 
 Usage: skillhash.py <skill-dir> [<skill-dir> ...]
 """
@@ -23,7 +24,8 @@ def skill_content_hash(skill_dir: Path) -> str:
     h = hashlib.sha256()
     files = sorted(
         p for p in skill_dir.rglob("*")
-        if p.is_file() and not any(part.startswith(".") for part in p.relative_to(skill_dir).parts)
+        if p.is_file() and p.name != "hivemind-version.json"
+        and not any(part.startswith(".") for part in p.relative_to(skill_dir).parts)
     )
     for p in files:
         h.update(p.relative_to(skill_dir).as_posix().encode("utf-8"))
