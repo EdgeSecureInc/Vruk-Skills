@@ -1,0 +1,67 @@
+# Hivemind Skill Catalog — curated, git-versioned skill manifest.
+# One entry per shipped/curated skill. Versions live HERE (and in git history/tags),
+# never in skill names. See README.md for the contract and tools/skillhash.py for
+# the content_hash algorithm.
+schema_version: 1
+channel: stable
+
+skills:
+  - id: skill-scout
+    family: skill-scout
+    runtime: hermes
+    path: skills/hermes/skill-scout
+    kind: instructional
+    trust: curated
+    install_policy: confirm_once
+    ships_by_default: true
+    version: 1
+    updated: 2026-07-09
+    content_hash: sha256:d40947fa1199d77be512169f66b29e712d2ff427f52e4cf81614cf1eb2deb549
+    upstream_url: null
+    upstream_ref: null
+    description: Research published instructional skills for a requested capability and fetch the one approved candidate (skill_discovery task packages).
+
+  - id: mcp-scout
+    family: mcp-scout
+    runtime: hermes
+    path: skills/hermes/mcp-scout
+    kind: instructional
+    trust: curated
+    install_policy: confirm_once
+    ships_by_default: true
+    version: 1
+    updated: 2026-07-09
+    content_hash: sha256:9feee9485ca727fd892875edc74fe65d68768924cc0b9672a6ff525efd7c7ec3
+    upstream_url: null
+    upstream_ref: null
+    description: Research, install, and verify MCP servers for a desktop application (tool_learning task packages).
+
+  - id: hivemind-backup
+    family: hivemind-backup
+    runtime: hermes
+    path: skills/hermes/hivemind-backup
+    kind: instructional
+    trust: curated
+    install_policy: confirm_once
+    ships_by_default: true
+    version: 1
+    updated: 2026-07-09
+    content_hash: sha256:26cf7e8980db98894b3da38ff948e2a933291049953989ccb83c47ea86a7daa5
+    upstream_url: null
+    upstream_ref: null
+    description: Backup creation, verification, safe restore drills, resource manifests, and retention operations.
+
+  - id: hivemind-graphiti
+    family: hivemind-graphiti
+    runtime: hermes
+    path: skills/hermes/hivemind-graphiti
+    kind: instructional
+    trust: curated
+    install_policy: confirm_once
+    ships_by_default: true
+    version: 1
+    updated: 2026-07-09
+    content_hash: sha256:aecd3c1bab9c7db95428d7f5b80be48af28352c35040782b28e641c6a1a74ba2
+    upstream_url: null
+    upstream_ref: null
+    description: Temporal graph brain work — graph search/export, namespace checks, Graphiti-aware backup readiness, restore drill handoffs.
