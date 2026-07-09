@@ -1,5 +1,14 @@
 # Changelog
 
+## v2 — 2026-07-09
+
+Removed `skill-scout` and `mcp-scout`: reclassified as META skills (machinery
+hardwired to gateway code — `--skills` preloads in `outworlder_client.py`). They
+now ship with the INSTALLER under `templates/meta-skills/hermes/` as
+`hivemind-hermes-skill-scout` / `hivemind-hermes-mcp-scout` (#96 naming
+convention) and update through installer releases, not this catalog. The catalog
+keeps content skills only: `hivemind-backup`, `hivemind-graphiti`.
+
 ## v1 — 2026-07-09
 
 Initial catalog. Relocated the four content skills previously baked into the

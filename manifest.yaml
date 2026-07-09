@@ -6,36 +6,6 @@ schema_version: 1
 channel: stable
 
 skills:
-  - id: skill-scout
-    family: skill-scout
-    runtime: hermes
-    path: skills/hermes/skill-scout
-    kind: instructional
-    trust: curated
-    install_policy: confirm_once
-    ships_by_default: true
-    version: 1
-    updated: 2026-07-09
-    content_hash: sha256:d40947fa1199d77be512169f66b29e712d2ff427f52e4cf81614cf1eb2deb549
-    upstream_url: null
-    upstream_ref: null
-    description: Research published instructional skills for a requested capability and fetch the one approved candidate (skill_discovery task packages).
-
-  - id: mcp-scout
-    family: mcp-scout
-    runtime: hermes
-    path: skills/hermes/mcp-scout
-    kind: instructional
-    trust: curated
-    install_policy: confirm_once
-    ships_by_default: true
-    version: 1
-    updated: 2026-07-09
-    content_hash: sha256:9feee9485ca727fd892875edc74fe65d68768924cc0b9672a6ff525efd7c7ec3
-    upstream_url: null
-    upstream_ref: null
-    description: Research, install, and verify MCP servers for a desktop application (tool_learning task packages).
-
   - id: hivemind-backup
     family: hivemind-backup
     runtime: hermes
