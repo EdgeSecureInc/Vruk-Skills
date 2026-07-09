@@ -1,5 +1,18 @@
 # Changelog
 
+## v3 — 2026-07-09
+
+Renamed both content skills to the #96 convention with the `omni` segment
+(usable by any agent; the concealment rule forbids the cloud agent's name in
+user-visible skill names, so `omni` is the neutral segment for user-facing
+skills):
+
+- `hivemind-backup` → `hivemind-omni-backup` v2 (now `runtime: omni`, `skills/omni/`)
+- `hivemind-graphiti` → `hivemind-omni-graphiti` v2 (same)
+
+Installers older than the omni store mapping will skip these (reported, not
+silent); pair with the matching RagStackProxy release.
+
 ## v2 — 2026-07-09
 
 Removed `skill-scout` and `mcp-scout`: reclassified as META skills (machinery

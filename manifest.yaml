@@ -6,32 +6,32 @@ schema_version: 1
 channel: stable
 
 skills:
-  - id: hivemind-backup
-    family: hivemind-backup
-    runtime: hermes
-    path: skills/hermes/hivemind-backup
+  - id: hivemind-omni-backup
+    family: hivemind-omni-backup
+    runtime: omni
+    path: skills/omni/hivemind-omni-backup
     kind: instructional
     trust: curated
     install_policy: confirm_once
     ships_by_default: true
-    version: 1
+    version: 2
     updated: 2026-07-09
-    content_hash: sha256:26cf7e8980db98894b3da38ff948e2a933291049953989ccb83c47ea86a7daa5
+    content_hash: sha256:aa65897256f6248a52154b627abf446300cd7482c75d98f723c3c1dc01036996
     upstream_url: null
     upstream_ref: null
     description: Backup creation, verification, safe restore drills, resource manifests, and retention operations.
 
-  - id: hivemind-graphiti
-    family: hivemind-graphiti
-    runtime: hermes
-    path: skills/hermes/hivemind-graphiti
+  - id: hivemind-omni-graphiti
+    family: hivemind-omni-graphiti
+    runtime: omni
+    path: skills/omni/hivemind-omni-graphiti
     kind: instructional
     trust: curated
     install_policy: confirm_once
     ships_by_default: true
-    version: 1
+    version: 2
     updated: 2026-07-09
-    content_hash: sha256:aecd3c1bab9c7db95428d7f5b80be48af28352c35040782b28e641c6a1a74ba2
+    content_hash: sha256:461690b7398393d5aaaff7f8295f94479e7b98835dcee6bfdff9a627d5dbf190
     upstream_url: null
     upstream_ref: null
     description: Temporal graph brain work — graph search/export, namespace checks, Graphiti-aware backup readiness, restore drill handoffs.

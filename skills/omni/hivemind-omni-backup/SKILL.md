@@ -1,5 +1,5 @@
 ---
-name: hivemind-backup
+name: hivemind-omni-backup
 description: Use for RagStackProxy Phase 13 backup, restore, Git backup stub, and rebuild drills.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: hivemind-graphiti
+name: hivemind-omni-graphiti
 description: Use for Hivemind Graphiti temporal brain work, graph search/export, namespace checks, Graphiti-aware backup readiness, and safe restore drill handoffs.
 ---
 
