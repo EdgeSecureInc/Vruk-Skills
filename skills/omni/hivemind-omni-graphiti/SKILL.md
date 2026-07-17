@@ -26,7 +26,7 @@ From the RAGStack install root:
 
 When resuming installer work after Phase 9 or Phase 10:
 
-- Treat the local source clone (e.g. `~/AIAgentTemplates`, from `EdgeSecureInc/Vruk-Forge`) as the source/template repo.
+- Treat the local source clone (e.g. `~/Vruk-Forge`, from `EdgeSecureInc/Vruk-Forge`) as the source/template repo.
 - Treat the RAGStack install root (e.g. `~/<ragstack-install-root>`) as the runtime/install root.
 - Follow the canonical entry path before changing files:
   - `ReadMe.md`

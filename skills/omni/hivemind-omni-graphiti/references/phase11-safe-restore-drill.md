@@ -4,10 +4,10 @@ Use this reference when resuming Hivemind RAGStack after Phase 10 backup readine
 
 ## Source/runtime boundary
 
-- Source/template repo: `~/AIAgentTemplates` (clone of `EdgeSecureInc/Vruk-Forge`)
+- Source/template repo: `~/Vruk-Forge` (clone of `EdgeSecureInc/Vruk-Forge`)
 - Runtime/install root: `~/<ragstack-install-root>`
 - Copy Phase 11 files from:
-  `~/AIAgentTemplates/hivemind/RAGStack/templates/install-root`
+  `~/Vruk-Forge/hivemind/RAGStack/templates/install-root`
 - Copy into:
   `~/<ragstack-install-root>`
 

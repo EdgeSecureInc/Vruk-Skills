@@ -6,7 +6,7 @@ This reference captures the proven Phase 10 command sequence and the update/reru
 
 ```text
 Source/template repo (clone of EdgeSecureInc/Vruk-Forge):
-~/AIAgentTemplates
+~/Vruk-Forge
 
 Runtime/install root:
 ~/<ragstack-install-root>
@@ -61,7 +61,7 @@ Useful quick comparison pattern:
 python3 - <<'PY'
 from pathlib import Path
 import hashlib, json
-SRC=Path.home()/'AIAgentTemplates/hivemind/RAGStack/templates/install-root'
+SRC=Path.home()/'Vruk-Forge/hivemind/RAGStack/templates/install-root'
 DST=Path.home()/'<ragstack-install-root>'
 files=[
  'config/backup/backup_policy.yaml',
@@ -94,7 +94,7 @@ PY
 Copy the packaged Phase 10 files from source into runtime. Include the skill and its reference when source now carries the self-improvement:
 
 ```bash
-SRC=$HOME/AIAgentTemplates/hivemind/RAGStack/templates/install-root
+SRC=$HOME/Vruk-Forge/hivemind/RAGStack/templates/install-root
 DST=$HOME/<ragstack-install-root>
 files=(
   config/backup/backup_policy.yaml
