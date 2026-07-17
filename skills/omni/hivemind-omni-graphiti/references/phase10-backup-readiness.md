@@ -5,14 +5,14 @@ This reference captures the proven Phase 10 command sequence and the update/reru
 ## Source and runtime roots
 
 ```text
-Source/template repo:
-/home/edgesecure/AIAgentTemplates
+Source/template repo (clone of EdgeSecureInc/Vruk-Forge):
+~/AIAgentTemplates
 
 Runtime/install root:
-/home/edgesecure/DenchoHivemindRAGStack
+~/<ragstack-install-root>
 
 Active Hermes skill install:
-/home/edgesecure/.hermes/skills/hivemind/hivemind-graphiti
+~/.hermes/skills/hivemind/hivemind-graphiti
 ```
 
 ## Required baseline before Phase 10
@@ -61,8 +61,8 @@ Useful quick comparison pattern:
 python3 - <<'PY'
 from pathlib import Path
 import hashlib, json
-SRC=Path('/home/edgesecure/AIAgentTemplates/hivemind/RAGStack/templates/install-root')
-DST=Path('/home/edgesecure/DenchoHivemindRAGStack')
+SRC=Path.home()/'AIAgentTemplates/hivemind/RAGStack/templates/install-root'
+DST=Path.home()/'<ragstack-install-root>'
 files=[
  'config/backup/backup_policy.yaml',
  'scripts/create_hivemind_backup.py',
@@ -94,8 +94,8 @@ PY
 Copy the packaged Phase 10 files from source into runtime. Include the skill and its reference when source now carries the self-improvement:
 
 ```bash
-SRC=/home/edgesecure/AIAgentTemplates/hivemind/RAGStack/templates/install-root
-DST=/home/edgesecure/DenchoHivemindRAGStack
+SRC=$HOME/AIAgentTemplates/hivemind/RAGStack/templates/install-root
+DST=$HOME/<ragstack-install-root>
 files=(
   config/backup/backup_policy.yaml
   scripts/create_hivemind_backup.py
@@ -124,9 +124,9 @@ If the user asks to keep the active Hermes skill in sync, reinstall it from the 
 
 ```bash
 install -D -m 0644 "$SRC/skills/hivemind-graphiti/SKILL.md" \
-  /home/edgesecure/.hermes/skills/hivemind/hivemind-graphiti/SKILL.md
+  $HOME/.hermes/skills/hivemind/hivemind-graphiti/SKILL.md
 install -D -m 0644 "$SRC/skills/hivemind-graphiti/references/phase10-backup-readiness.md" \
-  /home/edgesecure/.hermes/skills/hivemind/hivemind-graphiti/references/phase10-backup-readiness.md
+  $HOME/.hermes/skills/hivemind/hivemind-graphiti/references/phase10-backup-readiness.md
 ```
 
 ## Phase 10 command sequence

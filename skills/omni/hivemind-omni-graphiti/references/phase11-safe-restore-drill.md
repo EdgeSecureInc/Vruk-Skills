@@ -4,12 +4,12 @@ Use this reference when resuming Hivemind RAGStack after Phase 10 backup readine
 
 ## Source/runtime boundary
 
-- Source/template repo: `/home/edgesecure/AIAgentTemplates`
-- Runtime/install root: `/home/edgesecure/DenchoHivemindRAGStack`
+- Source/template repo: `~/AIAgentTemplates` (clone of `EdgeSecureInc/Vruk-Forge`)
+- Runtime/install root: `~/<ragstack-install-root>`
 - Copy Phase 11 files from:
-  `/home/edgesecure/AIAgentTemplates/hivemind/RAGStack/templates/install-root`
+  `~/AIAgentTemplates/hivemind/RAGStack/templates/install-root`
 - Copy into:
-  `/home/edgesecure/DenchoHivemindRAGStack`
+  `~/<ragstack-install-root>`
 
 ## Phase 11 read set
 
@@ -82,7 +82,7 @@ Expected Phase 11 markers:
 The drill must restore only into `runtime/restore_drills/phase11/` by default. Verify:
 
 - `target_is_live_root` is false.
-- Restore target path starts under `/home/edgesecure/DenchoHivemindRAGStack/runtime/restore_drills/phase11/`.
+- Restore target path starts under `<ragstack-install-root>/runtime/restore_drills/phase11/`.
 - The live install root was not overwritten.
 - `PHASE11_RESTORE_REPORT.json` exists in the restore target.
 - Forbidden restored path hits are empty, especially:
