@@ -1,13 +1,13 @@
 # Phase 11 Safe Restore Drill
 
-Use this reference when resuming Hivemind RAGStack after Phase 10 backup readiness is green and the user asks to run Phase 11.
+Use this reference when resuming Vruk RAGStack after Phase 10 backup readiness is green and the user asks to run Phase 11.
 
 ## Source/runtime boundary
 
 - Source/template repo: `~/Vruk-Forge` (clone of `EdgeSecureInc/Vruk-Forge`)
 - Runtime/install root: `~/<ragstack-install-root>`
 - Copy Phase 11 files from:
-  `~/Vruk-Forge/hivemind/RAGStack/templates/install-root`
+  `~/Vruk-Forge/vruk/RAGStack/templates/install-root`
 - Copy into:
   `~/<ragstack-install-root>`
 
@@ -17,11 +17,11 @@ Read the canonical installer path first, then Phase 11 files:
 
 - `ReadMe.md`
 - `HIVEMINDMAP.md`
-- `hivemind/RAGStack/START_HERE.md`
-- `hivemind/RAGStack/prompts/install-master-prompt.md`
-- `hivemind/RAGStack/docs/phase-11-restore-drill.md`
-- `hivemind/RAGStack/checklists/phase-11.md`
-- `hivemind/RAGStack/prompts/stages/26-phase11-restore-drill.md`
+- `vruk/RAGStack/START_HERE.md`
+- `vruk/RAGStack/prompts/install-master-prompt.md`
+- `vruk/RAGStack/docs/phase-11-restore-drill.md`
+- `vruk/RAGStack/checklists/phase-11.md`
+- `vruk/RAGStack/prompts/stages/26-phase11-restore-drill.md`
 
 ## Baseline before Phase 11
 
@@ -40,7 +40,7 @@ Expected key marker:
 
 ```text
 config/backup/restore_policy.yaml
-scripts/restore_hivemind_backup_drill.py
+scripts/restore_vruk_backup_drill.py
 scripts/phase11_restore_status.sh
 scripts/run_phase11_restore_tests.py
 scripts/run_phase11_restore_tests.sh
@@ -57,14 +57,14 @@ Make scripts executable after copying.
 ./scripts/phase11_restore_status.sh
 ./scripts/run_phase11_restore_tests.sh
 ./scripts/run_phase11_all_tests.sh
-./scripts/restore_hivemind_backup_drill.py --dry-run --json
-./scripts/restore_hivemind_backup_drill.py --execute --i-understand --json
+./scripts/restore_vruk_backup_drill.py --dry-run --json
+./scripts/restore_vruk_backup_drill.py --execute --i-understand --json
 ```
 
 If no Phase 10 archive exists, create one first:
 
 ```bash
-./scripts/create_hivemind_backup.py --execute --i-understand --json
+./scripts/create_vruk_backup.py --execute --i-understand --json
 ```
 
 Expected Phase 11 markers:

@@ -1,4 +1,4 @@
-# Hivemind Skill Catalog — curated, git-versioned skill manifest.
+# Vruk Skill Catalog — curated, git-versioned skill manifest.
 # One entry per shipped/curated skill. Versions live HERE (and in git history/tags),
 # never in skill names. See README.md for the contract and tools/skillhash.py for
 # the content_hash algorithm.
@@ -6,10 +6,10 @@ schema_version: 1
 channel: stable
 
 skills:
-  - id: hivemind-omni-backup
-    family: hivemind-omni-backup
+  - id: vruk-omni-backup
+    family: vruk-omni-backup
     runtime: omni
-    path: skills/omni/hivemind-omni-backup
+    path: skills/omni/vruk-omni-backup
     kind: instructional
     trust: curated
     install_policy: confirm_once
@@ -21,10 +21,10 @@ skills:
     upstream_ref: null
     description: Backup creation, verification, safe restore drills, resource manifests, and retention operations.
 
-  - id: hivemind-omni-graphiti
-    family: hivemind-omni-graphiti
+  - id: vruk-omni-graphiti
+    family: vruk-omni-graphiti
     runtime: omni
-    path: skills/omni/hivemind-omni-graphiti
+    path: skills/omni/vruk-omni-graphiti
     kind: instructional
     trust: curated
     install_policy: confirm_once

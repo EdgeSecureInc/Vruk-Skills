@@ -12,8 +12,8 @@ Phase 13 owns the backup, restore, and rebuild procedure.
 ## Default sequence
 
 ```bash
-./scripts/create_hivemind_backup.py
-./scripts/run_hivemind_backup_cycle.py
+./scripts/create_vruk_backup.py
+./scripts/run_vruk_backup_cycle.py
 ./scripts/run_rebuild_drill.sh
 ./scripts/run_outworlder_boundary_tests.sh
 ```

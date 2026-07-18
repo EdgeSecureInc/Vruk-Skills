@@ -1,6 +1,6 @@
-# Hivemind Skill Catalog
+# Vruk Skill Catalog
 
-Curated, git-versioned catalog of **content skills** for HiveMind installs. A fresh
+Curated, git-versioned catalog of **content skills** for Vruk installs. A fresh
 install clones this repo (no keys — it is public by design) to
 `runtime/skilltree/catalog-repo/` and installs every `ships_by_default` skill into
 its runtime store; a timer `git fetch`es for updates; rollback is `git checkout
@@ -18,7 +18,7 @@ CHANGELOG.md             # release notes; git tags mark releases
 tools/skillhash.py       # canonical content_hash algorithm
 skills/
   pydantic/<slug>/SKILL.md   # Assistant skills   -> vaults/Assistant/skills/<slug>/
-  hermes/<slug>/SKILL.md     # OutWorlder skills  -> ~/.hermes/skills/hivemind/<slug>/
+  hermes/<slug>/SKILL.md     # OutWorlder skills  -> ~/.hermes/skills/vruk/<slug>/
   omni/<slug>/SKILL.md       # agent-neutral; installer/runtime maps the target store
 ```
 
@@ -50,7 +50,7 @@ runtime = a new subdir + a new target-store mapping.
 - Bump `version` + `updated` + `content_hash` whenever a skill's content changes.
 - Per-skill release tags: `skill/<runtime>/<id>/v<version>`; normal repo tags mark
   catalog releases. Skill names never carry versions or dates.
-- Installed copies carry a `hivemind-version.json` sidecar recording the
+- Installed copies carry a `vruk-version.json` sidecar recording the
   version/hash/catalog ref they came from; a newer manifest version/hash means
   "update available".
 - Third-party vendored skills pin `upstream_url` + `upstream_ref`; re-vendoring

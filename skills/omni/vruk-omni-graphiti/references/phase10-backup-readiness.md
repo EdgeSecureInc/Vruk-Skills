@@ -12,7 +12,7 @@ Runtime/install root:
 ~/<ragstack-install-root>
 
 Active Hermes skill install:
-~/.hermes/skills/hivemind/hivemind-graphiti
+~/.hermes/skills/vruk/vruk-graphiti
 ```
 
 ## Required baseline before Phase 10
@@ -43,16 +43,16 @@ When the user says Phase 10 was updated, first compare the packaged source files
 
 ```text
 config/backup/backup_policy.yaml
-scripts/create_hivemind_backup.py
-scripts/verify_hivemind_backup.py
+scripts/create_vruk_backup.py
+scripts/verify_vruk_backup.py
 scripts/phase10_backup_status.sh
 scripts/run_phase10_backup_tests.py
 scripts/run_phase10_backup_tests.sh
 scripts/run_phase10_all_tests.sh
 tests/backup_scenarios/phase10_backup_scenarios.yaml
 tests/expected_results/phase10_expected_behaviors.yaml
-skills/hivemind-graphiti/SKILL.md
-skills/hivemind-graphiti/references/phase10-backup-readiness.md
+skills/vruk-graphiti/SKILL.md
+skills/vruk-graphiti/references/phase10-backup-readiness.md
 ```
 
 Useful quick comparison pattern:
@@ -61,20 +61,20 @@ Useful quick comparison pattern:
 python3 - <<'PY'
 from pathlib import Path
 import hashlib, json
-SRC=Path.home()/'Vruk-Forge/hivemind/RAGStack/templates/install-root'
+SRC=Path.home()/'Vruk-Forge/vruk/RAGStack/templates/install-root'
 DST=Path.home()/'<ragstack-install-root>'
 files=[
  'config/backup/backup_policy.yaml',
- 'scripts/create_hivemind_backup.py',
- 'scripts/verify_hivemind_backup.py',
+ 'scripts/create_vruk_backup.py',
+ 'scripts/verify_vruk_backup.py',
  'scripts/phase10_backup_status.sh',
  'scripts/run_phase10_backup_tests.py',
  'scripts/run_phase10_backup_tests.sh',
  'scripts/run_phase10_all_tests.sh',
  'tests/backup_scenarios/phase10_backup_scenarios.yaml',
  'tests/expected_results/phase10_expected_behaviors.yaml',
- 'skills/hivemind-graphiti/SKILL.md',
- 'skills/hivemind-graphiti/references/phase10-backup-readiness.md',
+ 'skills/vruk-graphiti/SKILL.md',
+ 'skills/vruk-graphiti/references/phase10-backup-readiness.md',
 ]
 out=[]
 for f in files:
@@ -94,26 +94,26 @@ PY
 Copy the packaged Phase 10 files from source into runtime. Include the skill and its reference when source now carries the self-improvement:
 
 ```bash
-SRC=$HOME/Vruk-Forge/hivemind/RAGStack/templates/install-root
+SRC=$HOME/Vruk-Forge/vruk/RAGStack/templates/install-root
 DST=$HOME/<ragstack-install-root>
 files=(
   config/backup/backup_policy.yaml
-  scripts/create_hivemind_backup.py
-  scripts/verify_hivemind_backup.py
+  scripts/create_vruk_backup.py
+  scripts/verify_vruk_backup.py
   scripts/phase10_backup_status.sh
   scripts/run_phase10_backup_tests.py
   scripts/run_phase10_backup_tests.sh
   scripts/run_phase10_all_tests.sh
   tests/backup_scenarios/phase10_backup_scenarios.yaml
   tests/expected_results/phase10_expected_behaviors.yaml
-  skills/hivemind-graphiti/SKILL.md
-  skills/hivemind-graphiti/references/phase10-backup-readiness.md
+  skills/vruk-graphiti/SKILL.md
+  skills/vruk-graphiti/references/phase10-backup-readiness.md
 )
 for f in "${files[@]}"; do
   install -D -m 0644 "$SRC/$f" "$DST/$f"
 done
-chmod +x "$DST/scripts/create_hivemind_backup.py" \
-  "$DST/scripts/verify_hivemind_backup.py" \
+chmod +x "$DST/scripts/create_vruk_backup.py" \
+  "$DST/scripts/verify_vruk_backup.py" \
   "$DST/scripts/phase10_backup_status.sh" \
   "$DST/scripts/run_phase10_backup_tests.py" \
   "$DST/scripts/run_phase10_backup_tests.sh" \
@@ -123,10 +123,10 @@ chmod +x "$DST/scripts/create_hivemind_backup.py" \
 If the user asks to keep the active Hermes skill in sync, reinstall it from the source template too:
 
 ```bash
-install -D -m 0644 "$SRC/skills/hivemind-graphiti/SKILL.md" \
-  $HOME/.hermes/skills/hivemind/hivemind-graphiti/SKILL.md
-install -D -m 0644 "$SRC/skills/hivemind-graphiti/references/phase10-backup-readiness.md" \
-  $HOME/.hermes/skills/hivemind/hivemind-graphiti/references/phase10-backup-readiness.md
+install -D -m 0644 "$SRC/skills/vruk-graphiti/SKILL.md" \
+  $HOME/.hermes/skills/vruk/vruk-graphiti/SKILL.md
+install -D -m 0644 "$SRC/skills/vruk-graphiti/references/phase10-backup-readiness.md" \
+  $HOME/.hermes/skills/vruk/vruk-graphiti/references/phase10-backup-readiness.md
 ```
 
 ## Phase 10 command sequence
@@ -137,9 +137,9 @@ Run from the runtime/install root:
 ./scripts/phase10_backup_status.sh
 ./scripts/run_phase10_backup_tests.sh
 ./scripts/run_phase10_all_tests.sh
-./scripts/create_hivemind_backup.py --dry-run --json
-./scripts/create_hivemind_backup.py --execute --i-understand --json
-./scripts/verify_hivemind_backup.py <ARCHIVE_PATH_FROM_CREATE_STEP> --json
+./scripts/create_vruk_backup.py --dry-run --json
+./scripts/create_vruk_backup.py --execute --i-understand --json
+./scripts/verify_vruk_backup.py <ARCHIVE_PATH_FROM_CREATE_STEP> --json
 ```
 
 Expected Phase 10 markers:
@@ -174,8 +174,8 @@ BACKUP_MANIFEST.json
 config/backup/backup_policy.yaml
 config/graphiti/graphiti_runtime.yaml
 config/graphiti/namespaces.yaml
-gateway/hivemind_graphiti.py
-profiles/hivemind/profile_manifest.yaml
+gateway/vruk_graphiti.py
+profiles/vruk/profile_manifest.yaml
 runtime/graphiti/exports/latest_graph_summary.json
 runtime/graphiti/viewer/index.html
 ```

@@ -1,9 +1,9 @@
 ---
-name: hivemind-omni-backup
+name: vruk-omni-backup
 description: Use for RagStackProxy Phase 13 backup, restore, Git backup stub, and rebuild drills.
 ---
 
-# Hivemind Backup Skill
+# Vruk Backup Skill
 
 Use this skill for RagStackProxy Phase 13 backup and restore work.
 
@@ -18,7 +18,7 @@ Use this skill for RagStackProxy Phase 13 backup and restore work.
 ## Standard Checks
 
 ```bash
-./scripts/create_hivemind_backup.py
+./scripts/create_vruk_backup.py
 ./scripts/run_rebuild_drill.sh
 ./scripts/run_outworlder_boundary_tests.sh
 ```
