@@ -1,6 +1,11 @@
 # Backup and Restore Operations Reference
 
-Phase 13 owns the backup, restore, and rebuild procedure.
+> **ARCHIVED-ERA CONTENT.** This reference describes the retired
+> RagStackProxy/OutWorlder two-brain era phase procedure. It is not yet
+> qualified against the current supported variants (LiteRag_Pydantic /
+> LiteRag_Hermes). Verify every script and path against your installed box.
+
+Phase 13 (retired-era install numbering) owns the backup, restore, and rebuild procedure.
 
 ## Default local paths
 

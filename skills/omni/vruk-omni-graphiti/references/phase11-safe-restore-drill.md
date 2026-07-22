@@ -1,5 +1,11 @@
 # Phase 11 Safe Restore Drill
 
+> **ARCHIVED-ERA CONTENT.** This reference describes the retired
+> RagStackProxy/RAGStack two-brain era; `HIVEMINDMAP.md` and the
+> `vruk/RAGStack/…` paths it cites no longer exist (that era lives under
+> `Archived/HIVEMIND/` in Vruk-Forge). Not yet qualified against the current
+> supported variants (LiteRag_Pydantic / LiteRag_Hermes).
+
 Use this reference when resuming Vruk RAGStack after Phase 10 backup readiness is green and the user asks to run Phase 11.
 
 ## Source/runtime boundary

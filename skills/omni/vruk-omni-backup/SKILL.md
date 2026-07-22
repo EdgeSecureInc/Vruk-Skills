@@ -1,11 +1,17 @@
 ---
 name: vruk-omni-backup
-description: Use for RagStackProxy Phase 13 backup, restore, Git backup stub, and rebuild drills.
+description: Use for Vruk backup, restore, Git backup stub, and rebuild drills (archived RagStackProxy-era procedure).
 ---
 
 # Vruk Backup Skill
 
-Use this skill for RagStackProxy Phase 13 backup and restore work.
+> **ARCHIVED-ERA CONTENT.** This skill describes the retired
+> RagStackProxy/OutWorlder two-brain era (phase-numbered installs,
+> `vaults/OutWorlder/`, OutWorlder boundary tests). It is not yet qualified
+> against the current supported variants (LiteRag_Pydantic / LiteRag_Hermes).
+> Verify every script and path against your installed box before acting on it.
+
+Use this skill for Vruk backup and restore work (retired-era "Phase 13" procedure).
 
 ## Runtime Boundaries
 

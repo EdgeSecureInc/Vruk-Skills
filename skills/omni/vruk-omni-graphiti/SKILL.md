@@ -5,6 +5,14 @@ description: Use for Vruk Graphiti temporal brain work, graph search/export, nam
 
 # Vruk Graphiti Skill
 
+> **ARCHIVED-ERA CONTENT.** This skill describes the retired
+> RagStackProxy/RAGStack two-brain era: phase-numbered installs, a
+> `HIVEMINDMAP.md` entry doc, and `vruk/RAGStack/…` source paths that no longer
+> exist in Vruk-Forge (that era now lives under `Archived/HIVEMIND/`).
+> Graphiti/Neo4j are not part of the current supported variants, and this skill
+> is not yet qualified against LiteRag_Pydantic / LiteRag_Hermes. Verify every
+> path and script against your installed box before acting on any step below.
+
 Use this skill when a task involves the Vruk temporal graph brain, profile brain maps, Graphiti namespaces, graph search, graph export, Graphiti-aware backup readiness, or safe restore drill handoffs.
 
 ## Core rule
@@ -41,11 +49,8 @@ When resuming installer work after Phase 9 or Phase 10:
 - Append concise results and explicit non-claims to `INSTALL_REPORT.local.md`.
 - Do not run real ingestion, private/customer document processing, destructive restore, restart, or production disaster-recovery claims unless explicitly authorized.
 
-Detailed Phase 10 command/reference notes live in:
-
-```text
-skills/vruk-graphiti/references/phase10-backup-readiness.md
-```
+Detailed Phase 10 command/reference notes live in this skill's
+`references/phase10-backup-readiness.md`.
 
 ## Phase 10/11/12 resume notes
 
@@ -54,13 +59,10 @@ skills/vruk-graphiti/references/phase10-backup-readiness.md
 - After resolving Graphiti reference drift, verify checksums for `skills/vruk-graphiti/SKILL.md`, `references/phase10-backup-readiness.md`, and `references/phase11-safe-restore-drill.md` across source/runtime/active, then rerun the relevant prior-phase all-tests before reporting readiness for the next phase.
 - Phase 10 must preserve Graphiti-safe exports and viewer artifacts, not raw Neo4j internals or Graphiti secrets.
 - Phase 11 restore work must stay inside `runtime/restore_drills/phase11/` and must never overwrite the live install root by default.
-- Phase 12 and later backup operations should primarily use the `vruk-backup` skill. Use this Graphiti skill only for Graphiti baseline, namespace, smoke, export, or Graphiti-specific backup context.
+- Phase 12 and later backup operations should primarily use the `vruk-omni-backup` skill. Use this Graphiti skill only for Graphiti baseline, namespace, smoke, export, or Graphiti-specific backup context.
 
-Detailed Phase 11 command/reference notes live in:
-
-```text
-skills/vruk-graphiti/references/phase11-safe-restore-drill.md
-```
+Detailed Phase 11 command/reference notes live in this skill's
+`references/phase11-safe-restore-drill.md`.
 
 ## Agent behavior
 

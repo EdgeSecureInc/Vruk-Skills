@@ -14,12 +14,12 @@ skills:
     trust: curated
     install_policy: confirm_once
     ships_by_default: true
-    version: 2
-    updated: 2026-07-09
-    content_hash: sha256:aa65897256f6248a52154b627abf446300cd7482c75d98f723c3c1dc01036996
+    version: 3
+    updated: 2026-07-22
+    content_hash: sha256:5dedcdb024c074bae0b23e03cebae6a71ff44cd1dbaddedd16516cce6ab119b1
     upstream_url: null
     upstream_ref: null
-    description: Backup creation, verification, safe restore drills, resource manifests, and retention operations.
+    description: Backup creation, verification, safe restore drills, resource manifests, and retention operations. Archived RagStackProxy-era content; not yet qualified against current LiteRag variants.
 
   - id: vruk-omni-graphiti
     family: vruk-omni-graphiti
@@ -29,9 +29,9 @@ skills:
     trust: curated
     install_policy: confirm_once
     ships_by_default: true
-    version: 2
-    updated: 2026-07-09
-    content_hash: sha256:461690b7398393d5aaaff7f8295f94479e7b98835dcee6bfdff9a627d5dbf190
+    version: 3
+    updated: 2026-07-22
+    content_hash: sha256:091840e8c361ebecc053baa3b93efa085ddcd35d6014128ca7157731d1678422
     upstream_url: null
     upstream_ref: null
-    description: Temporal graph brain work — graph search/export, namespace checks, Graphiti-aware backup readiness, restore drill handoffs.
+    description: Temporal graph brain work — graph search/export, namespace checks, Graphiti-aware backup readiness, restore drill handoffs. Archived RagStackProxy-era content; not yet qualified against current LiteRag variants.

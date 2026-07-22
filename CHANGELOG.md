@@ -1,5 +1,27 @@
 # Changelog
 
+## v4 — 2026-07-22
+
+Catalog ids caught up with the ecosystem-wide `hivemind-*` → `vruk-*` rename
+(Vruk-Forge#164 group 2, commit a5243ad, previously unchangelogged) and the
+docs-unification pass (Vruk-Forge#181):
+
+- Skill ids/dirs are now `vruk-omni-backup` and `vruk-omni-graphiti`
+  (formerly `hivemind-omni-backup` / `hivemind-omni-graphiti`).
+- Both skills bumped to v3: conspicuous ARCHIVED-ERA banners added — their
+  content describes the retired RagStackProxy/OutWorlder two-brain phase
+  installs (`vruk/RAGStack/…`, `HIVEMINDMAP.md`) and is not yet qualified
+  against the current LiteRag_Pydantic / LiteRag_Hermes variants; internal
+  reference paths fixed to the current dir names.
+- `content_hash` regenerated for both skills. The v3-era manifest hashes had
+  gone stale: content edits at 49f85d2/80d45fc/a5243ad never re-ran
+  `tools/skillhash.py` or bumped versions.
+- `tools/skillhash.py` now skips the current install sidecar name
+  `vruk-version.json` (was still skipping the retired `hivemind-version.json`),
+  matching the deployed `skill_catalog_install.py` algorithm. Catalog-side
+  hashes are unaffected (catalog dirs carry no sidecar).
+- README rewritten for the unified doc contract; AGENTS.md added.
+
 ## v3 — 2026-07-09
 
 Renamed both content skills to the #96 convention with the `omni` segment

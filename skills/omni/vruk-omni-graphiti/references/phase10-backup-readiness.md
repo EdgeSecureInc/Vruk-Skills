@@ -1,5 +1,11 @@
 # Phase 10 Backup Readiness Reference
 
+> **ARCHIVED-ERA CONTENT.** This reference describes the retired
+> RagStackProxy/RAGStack two-brain era; the `~/Vruk-Forge/vruk/RAGStack/…`
+> source paths it cites no longer exist (that era lives under
+> `Archived/HIVEMIND/` in Vruk-Forge). Not yet qualified against the current
+> supported variants (LiteRag_Pydantic / LiteRag_Hermes).
+
 This reference captures the proven Phase 10 command sequence and the update/rerun lessons for Graphiti-aware backup readiness.
 
 ## Source and runtime roots
