@@ -43,8 +43,7 @@ and the ST-9 allowlist live in the installers inside Vruk-Forge, not here.
 ## Verify before handing off
 
 ```bash
-python3 tools/skillhash.py skills/omni/vruk-omni-backup skills/omni/vruk-omni-graphiti
-grep content_hash manifest.yaml   # printed hashes must match
+python3 tools/validate_catalog.py
 ```
 
 ## Related repos (EdgeSecureInc)

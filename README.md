@@ -15,6 +15,7 @@ This repo owns exactly three things:
   version, `content_hash`, and provenance.
 - `skills/` — the skill content itself (instructional `SKILL.md` + references).
 - `tools/skillhash.py` — the canonical `content_hash` algorithm.
+- `tools/validate_catalog.py` — manifest, hash, and default-shipping gate.
 
 It holds **content only**: no policy, no whitelists/blacklists, no secrets, no
 code the runtime executes. It does NOT own:
@@ -82,8 +83,8 @@ The supported install variants are **LiteRag_Pydantic** and **LiteRag_Hermes**
 | `vruk-omni-graphiti` | ARCHIVED-ERA content (retired RAGStack phase installs; Graphiti/Neo4j are not part of current variants). **Not yet qualified against current LiteRag variants.** |
 
 Archived-era skills stay in the catalog for reference and carry a conspicuous
-banner in their SKILL.md; treat every path/script in them as unverified until a
-skill is explicitly qualified against a supported variant.
+banner in their SKILL.md. They do not ship by default; treat their instructions
+as unverified until a skill is explicitly qualified against a supported variant.
 
 ## Manifest entry
 
@@ -117,17 +118,15 @@ skill is explicitly qualified against a supported variant.
 
 ## Clean-clone verification
 
-From a fresh clone, verify the manifest hashes match the content:
+From the repo root:
 
 ```bash
-python3 tools/skillhash.py skills/omni/vruk-omni-backup skills/omni/vruk-omni-graphiti
-grep content_hash manifest.yaml
+python3 tools/validate_catalog.py
 ```
 
-Every printed hash must equal the corresponding manifest `content_hash`. The
-algorithm (sha256 over sorted relative paths + bytes, skipping dotfiles and the
-`vruk-version.json` sidecar) MUST stay byte-identical to the consumer copy in
-the installers' `scripts/skill_catalog_install.py`.
+The validator checks schema fields, catalog coverage, hashes, and prevents
+archived or unqualified skills from shipping by default. The hash algorithm
+MUST stay byte-identical to the installer consumer.
 
 ## Related repos (EdgeSecureInc)
 

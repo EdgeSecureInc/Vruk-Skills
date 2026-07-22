@@ -13,8 +13,8 @@ skills:
     kind: instructional
     trust: curated
     install_policy: confirm_once
-    ships_by_default: true
-    version: 3
+    ships_by_default: false
+    version: 4
     updated: 2026-07-22
     content_hash: sha256:5dedcdb024c074bae0b23e03cebae6a71ff44cd1dbaddedd16516cce6ab119b1
     upstream_url: null
@@ -28,8 +28,8 @@ skills:
     kind: instructional
     trust: curated
     install_policy: confirm_once
-    ships_by_default: true
-    version: 3
+    ships_by_default: false
+    version: 4
     updated: 2026-07-22
     content_hash: sha256:091840e8c361ebecc053baa3b93efa085ddcd35d6014128ca7157731d1678422
     upstream_url: null

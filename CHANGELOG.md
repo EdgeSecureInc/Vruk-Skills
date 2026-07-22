@@ -1,5 +1,11 @@
 # Changelog
 
+## v5 — 2026-07-22
+
+- Archived-era, unqualified skills no longer ship by default.
+- Added one deterministic catalog validator and CI gate for manifest coverage,
+  content hashes, and default-shipping qualification.
+
 ## v4 — 2026-07-22
 
 Catalog ids caught up with the ecosystem-wide `hivemind-*` → `vruk-*` rename
